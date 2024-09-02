@@ -14,6 +14,7 @@
 		C02FCD872C85A88A00872251 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FCD862C85A88A00872251 /* OnboardingView.swift */; };
 		C02FCD892C85AAEA00872251 /* NicknameSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FCD882C85AAEA00872251 /* NicknameSettingView.swift */; };
 		C02FCD8B2C85C6CA00872251 /* ProfileImageSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FCD8A2C85C6CA00872251 /* ProfileImageSettingView.swift */; };
+		C02FCD8D2C85CCF900872251 /* CompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FCD8C2C85CCF900872251 /* CompletedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		C02FCD862C85A88A00872251 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		C02FCD882C85AAEA00872251 /* NicknameSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameSettingView.swift; sourceTree = "<group>"; };
 		C02FCD8A2C85C6CA00872251 /* ProfileImageSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageSettingView.swift; sourceTree = "<group>"; };
+		C02FCD8C2C85CCF900872251 /* CompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				C02FCD862C85A88A00872251 /* OnboardingView.swift */,
 				C02FCD882C85AAEA00872251 /* NicknameSettingView.swift */,
 				C02FCD8A2C85C6CA00872251 /* ProfileImageSettingView.swift */,
+				C02FCD8C2C85CCF900872251 /* CompletedView.swift */,
 			);
 			path = SwiftUIPractice;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				C02FCD8B2C85C6CA00872251 /* ProfileImageSettingView.swift in Sources */,
 				C02FCD872C85A88A00872251 /* OnboardingView.swift in Sources */,
+				C02FCD8D2C85CCF900872251 /* CompletedView.swift in Sources */,
 				C02FCD7B2C85A4E600872251 /* ContentView.swift in Sources */,
 				C02FCD792C85A4E600872251 /* SwiftUIPracticeApp.swift in Sources */,
 				C02FCD892C85AAEA00872251 /* NicknameSettingView.swift in Sources */,

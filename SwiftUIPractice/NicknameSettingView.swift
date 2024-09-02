@@ -15,6 +15,7 @@ struct NicknameSettingView: View {
                         [false, false],
                         [false, false],
                         [false, false]]
+    @State private var isCompleted = false
     
     private var isActive: Bool {
         for type in mbti {
@@ -71,8 +72,8 @@ struct NicknameSettingView: View {
                 
                 Spacer()
                 
-                NavigationLink {
-                    
+                Button {
+                    isCompleted = true
                 } label: {
                     Text("완료")
                         .font(.title3)
@@ -93,6 +94,9 @@ struct NicknameSettingView: View {
             .onDisappear {
                 navigationTitle = ""
             }
+            .sheet(isPresented: $isCompleted, content: {
+                CompletedView()
+            })
         }
     }
 }
