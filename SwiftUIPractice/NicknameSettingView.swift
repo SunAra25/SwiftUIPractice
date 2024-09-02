@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NicknameSettingView: View {
+    @State private var imgNumber = Int.random(in: 0...11)
     @State private var nicknameInput = ""
     @State private var mbti = [[false, false],
                         [false, false],
@@ -27,11 +28,30 @@ struct NicknameSettingView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Image(systemName: "person.circle")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 120, height: 120)
-                    .padding()
+                NavigationLink {
+                    
+                } label: {
+                    Image("profile_\(imgNumber)")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 120, height: 120)
+                        .clipShape(RoundedRectangle(cornerRadius: 60))
+                        .clipShape(Circle())
+                        .overlay(
+                            Circle().stroke(.blue, lineWidth: 4)
+                        )
+                        .overlay(alignment: .bottomTrailing, content: {
+                            Image(systemName: "camera")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20, height: 20)
+                                .padding(8)
+                                .background(.blue)
+                                .foregroundStyle(.white)
+                                .clipShape(Circle())
+                        })
+                        .padding()
+                }
                 
                 TextField("nickname", text: $nicknameInput, prompt: Text("닉네임을 입력해주세요 :>"))
                     .padding()
