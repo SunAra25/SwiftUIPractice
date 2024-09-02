@@ -23,7 +23,7 @@ struct OnboardingView: View {
                     
                 
                 NavigationLink {
-                    
+                    NicknameSettingView()
                 } label: {
                     Text("시작하기")
                         .font(.title3)

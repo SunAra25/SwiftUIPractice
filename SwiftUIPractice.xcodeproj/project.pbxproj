@@ -12,6 +12,7 @@
 		C02FCD7D2C85A4E800872251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02FCD7C2C85A4E800872251 /* Assets.xcassets */; };
 		C02FCD802C85A4E800872251 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02FCD7F2C85A4E800872251 /* Preview Assets.xcassets */; };
 		C02FCD872C85A88A00872251 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FCD862C85A88A00872251 /* OnboardingView.swift */; };
+		C02FCD892C85AAEA00872251 /* NicknameSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FCD882C85AAEA00872251 /* NicknameSettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		C02FCD7C2C85A4E800872251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C02FCD7F2C85A4E800872251 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C02FCD862C85A88A00872251 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		C02FCD882C85AAEA00872251 /* NicknameSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameSettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				C02FCD7C2C85A4E800872251 /* Assets.xcassets */,
 				C02FCD7E2C85A4E800872251 /* Preview Content */,
 				C02FCD862C85A88A00872251 /* OnboardingView.swift */,
+				C02FCD882C85AAEA00872251 /* NicknameSettingView.swift */,
 			);
 			path = SwiftUIPractice;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				C02FCD872C85A88A00872251 /* OnboardingView.swift in Sources */,
 				C02FCD7B2C85A4E600872251 /* ContentView.swift in Sources */,
 				C02FCD792C85A4E600872251 /* SwiftUIPracticeApp.swift in Sources */,
+				C02FCD892C85AAEA00872251 /* NicknameSettingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
