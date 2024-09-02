@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NicknameSettingView: View {
+    @State private var navigationTitle = "PROFILE SETTING"
     @State private var imgNumber = Int.random(in: 0...11)
     @State private var nicknameInput = ""
     @State private var mbti = [[false, false],
@@ -29,13 +30,13 @@ struct NicknameSettingView: View {
         NavigationView {
             VStack {
                 NavigationLink {
-                    
+                    ProfileImageSettingView(imageNum: $imgNumber)
                 } label: {
                     Image("profile_\(imgNumber)")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 120, height: 120)
-                        .clipShape(RoundedRectangle(cornerRadius: 60))
+                        .frame(width: 100, height: 100)
+                        .clipShape(RoundedRectangle(cornerRadius: 50))
                         .clipShape(Circle())
                         .overlay(
                             Circle().stroke(.blue, lineWidth: 4)
@@ -44,7 +45,8 @@ struct NicknameSettingView: View {
                             Image(systemName: "camera")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(width: 20, height: 20)
+                                .frame(width: 18, height: 18)
+                                .fontWeight(.bold)
                                 .padding(8)
                                 .background(.blue)
                                 .foregroundStyle(.white)
@@ -83,8 +85,14 @@ struct NicknameSettingView: View {
                 }
                 .disabled(!isActive)
             }
-            .navigationTitle("PROFILE SETTING")
+            .navigationTitle(navigationTitle)
             .navigationBarTitleDisplayMode(.inline)
+            .onAppear {
+                navigationTitle = "PROFILE SETTING"
+            }
+            .onDisappear {
+                navigationTitle = ""
+            }
         }
     }
 }
