@@ -18,6 +18,7 @@
 		C02FCD8B2C85C6CA00872251 /* ProfileImageSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FCD8A2C85C6CA00872251 /* ProfileImageSettingView.swift */; };
 		C02FCD8D2C85CCF900872251 /* CompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FCD8C2C85CCF900872251 /* CompletedView.swift */; };
 		C0571F432C8871C700703609 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0571F422C8871C700703609 /* CategoryView.swift */; };
+		C0571F452C887FC100703609 /* RandomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0571F442C887FC100703609 /* RandomImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		C02FCD8A2C85C6CA00872251 /* ProfileImageSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageSettingView.swift; sourceTree = "<group>"; };
 		C02FCD8C2C85CCF900872251 /* CompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedView.swift; sourceTree = "<group>"; };
 		C0571F422C8871C700703609 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		C0571F442C887FC100703609 /* RandomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				C02FCD8C2C85CCF900872251 /* CompletedView.swift */,
 				C02883E12C876825000F42D1 /* SearchView.swift */,
 				C0571F422C8871C700703609 /* CategoryView.swift */,
+				C0571F442C887FC100703609 /* RandomImageView.swift */,
 				C02883E32C876D53000F42D1 /* CoinAPI.swift */,
 			);
 			path = SwiftUIPractice;
@@ -161,6 +164,7 @@
 				C02FCD8B2C85C6CA00872251 /* ProfileImageSettingView.swift in Sources */,
 				C02FCD872C85A88A00872251 /* OnboardingView.swift in Sources */,
 				C02FCD8D2C85CCF900872251 /* CompletedView.swift in Sources */,
+				C0571F452C887FC100703609 /* RandomImageView.swift in Sources */,
 				C02883E42C876D53000F42D1 /* CoinAPI.swift in Sources */,
 				C02883E22C876825000F42D1 /* SearchView.swift in Sources */,
 				C02FCD7B2C85A4E600872251 /* ContentView.swift in Sources */,
