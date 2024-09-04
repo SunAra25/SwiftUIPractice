@@ -17,7 +17,12 @@ struct SearchView: View {
             ScrollView {
                 LazyVStack {
                     ForEach($filterList, id: \.self) { item in
-                        CoinRow(item: item)
+                        NavigationLink {
+                            NavigationLazyView(closure: CoinDetailView(data: item))
+                        } label: {
+                            CoinRow(item: item)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
                 .navigationTitle(Text("Search"))
@@ -76,6 +81,31 @@ private struct CoinRow: View {
         }
         .padding(.horizontal)
         .padding(.vertical, 6)
+    }
+}
+
+struct NavigationLazyView<Content: View>: View {
+    let closure: () -> Content
+    
+    init(closure: @autoclosure @escaping () -> Content) {
+        self.closure = closure
+    }
+    
+    var body: some View {
+        closure()
+    }
+}
+
+struct CoinDetailView: View {
+    @Binding var data: Market
+    
+    var body: some View {
+        VStack {
+            Text(data.koreanName)
+                .font(.title)
+            Text(data.englishName)
+        }
+        .navigationTitle(Text(data.market))
     }
 }
 #Preview {
