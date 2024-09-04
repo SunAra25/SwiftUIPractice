@@ -7,29 +7,40 @@
 
 import SwiftUI
 
-struct Coin: Hashable {
-    let title: String
-    let market: String
-    var isLike: Bool = false
-}
-
 struct SearchView: View {
     @State private var input: String = ""
-    @State private var coinList = [Coin(title: "Bitcoin", market: "BTC"),
-    Coin(title: "Ethereum", market: "ETH"),
-    Coin(title: "Ripple", market: "XRP"),
-    Coin(title: "Ravencoin", market: "RVN")]
+    @State private var filterList: Markets = []
+    @State private var markets: Markets = []
     
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVStack {
-                    ForEach($coinList, id: \.self) { item in
+                    ForEach($filterList, id: \.self) { item in
                         CoinRow(item: item)
                     }
                 }
                 .navigationTitle(Text("Search"))
                 .searchable(text: $input, prompt: Text("Search"))
+                .onSubmit(of: .search) {
+                    filterList = markets.filter {$0.koreanName.contains(input)}
+                }
+                .onChange(of: input) { _, newValue in
+                    if !newValue.isEmpty {
+                        // 실시간 검색이 필요하면 이곳에서 하면 될 듯
+                        return
+                    }
+                    
+                    filterList = markets
+                }
+            }
+        }
+        .task {
+            do {
+                markets = try await CoinAPI.fetchMarket()
+                filterList = markets
+            } catch {
+                print("error")
             }
         }
     }
@@ -37,7 +48,7 @@ struct SearchView: View {
 }
 
 private struct CoinRow: View {
-    @Binding var item: Coin
+    @Binding var item: Market
     
     var body: some View {
         HStack {
@@ -46,9 +57,9 @@ private struct CoinRow: View {
                 .frame(width: 48, height: 48)
             
             VStack(alignment: .leading) {
-                Text(item.title)
+                Text(item.koreanName)
                     .font(.title3)
-                Text(item.market)
+                Text(item.englishName)
                     .foregroundStyle(.gray)
             }
             
