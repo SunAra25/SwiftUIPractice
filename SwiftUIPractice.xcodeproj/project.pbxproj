@@ -17,6 +17,7 @@
 		C02FCD892C85AAEA00872251 /* NicknameSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FCD882C85AAEA00872251 /* NicknameSettingView.swift */; };
 		C02FCD8B2C85C6CA00872251 /* ProfileImageSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FCD8A2C85C6CA00872251 /* ProfileImageSettingView.swift */; };
 		C02FCD8D2C85CCF900872251 /* CompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FCD8C2C85CCF900872251 /* CompletedView.swift */; };
+		C0571F432C8871C700703609 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0571F422C8871C700703609 /* CategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		C02FCD882C85AAEA00872251 /* NicknameSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameSettingView.swift; sourceTree = "<group>"; };
 		C02FCD8A2C85C6CA00872251 /* ProfileImageSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageSettingView.swift; sourceTree = "<group>"; };
 		C02FCD8C2C85CCF900872251 /* CompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedView.swift; sourceTree = "<group>"; };
+		C0571F422C8871C700703609 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				C02FCD8A2C85C6CA00872251 /* ProfileImageSettingView.swift */,
 				C02FCD8C2C85CCF900872251 /* CompletedView.swift */,
 				C02883E12C876825000F42D1 /* SearchView.swift */,
+				C0571F422C8871C700703609 /* CategoryView.swift */,
 				C02883E32C876D53000F42D1 /* CoinAPI.swift */,
 			);
 			path = SwiftUIPractice;
@@ -163,6 +166,7 @@
 				C02FCD7B2C85A4E600872251 /* ContentView.swift in Sources */,
 				C02FCD792C85A4E600872251 /* SwiftUIPracticeApp.swift in Sources */,
 				C02FCD892C85AAEA00872251 /* NicknameSettingView.swift in Sources */,
+				C0571F432C8871C700703609 /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
