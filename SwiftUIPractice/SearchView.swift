@@ -18,7 +18,7 @@ struct SearchView: View {
                 LazyVStack {
                     ForEach($filterList, id: \.self) { item in
                         NavigationLink {
-                            NavigationLazyView(closure: CoinDetailView(data: item))
+                            NavigationLazyView(CoinDetailView(data: item))
                         } label: {
                             CoinRow(item: item)
                         }
@@ -81,18 +81,6 @@ private struct CoinRow: View {
         }
         .padding(.horizontal)
         .padding(.vertical, 6)
-    }
-}
-
-struct NavigationLazyView<Content: View>: View {
-    let closure: () -> Content
-    
-    init(closure: @autoclosure @escaping () -> Content) {
-        self.closure = closure
-    }
-    
-    var body: some View {
-        closure()
     }
 }
 
